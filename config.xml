@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.gbl.sunflowerCISSP" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Sunflower CISSP</name>
+    <description>
+        CISSP summary. Version 2.0
+    </description>
+    <author email="g.blaise06@gmail.com" href="https://www.sunflower-cissp.com/">
+        g-bl
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

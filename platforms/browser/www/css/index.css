@@ -1,0 +1,23 @@
+p {
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #222;
+}
+ul>li {
+    color: #222;
+}
+a {
+    color: #222;
+}
+
+#sunflowers .page__background {
+    background-image: url("../img/sunflowers.png");
+    background-size: cover;
+}
+
+.domain1 .page__background {
+    background-color: rgb(184, 204, 227);
+}
+.domain2 .page__background {
+    background-color: rgb(194, 213, 155);
+}

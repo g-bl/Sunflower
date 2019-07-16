@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="thirdparty/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="thirdparty/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="thirdparty/onsenui/js/onsenui.min.js"></script>
+</head>
+
+<body>
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" collapse swipeable>
+      <ons-page>
+        <ons-list>
+          <ons-list-item onclick="fn.load('home.html')" tappable>
+            Home
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain1.html')" tappable>
+            Domain 1 - Security and Risk Management
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain2.html')" tappable>
+            Domain 2 - Asset Security
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain3.html')" tappable>
+            Domain 3 - Security Engineering
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain4.html')" tappable>
+            Domain 4 - Communications and Network Security
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain5.html')" tappable>
+            Domain 5 - Identity and Access Management
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain6.html')" tappable>
+            Domain 6 - Security Assessment and Testing
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain7.html')" tappable>
+            Domain 7 - Security Operations
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('domain8.html')" tappable>
+            Domain 8 - Software Development Security
+          </ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+  </ons-splitter>
+
+  <template id="home.html">
+    <ons-page id="sunflowers">
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center" id="title-home">Sunflower CISSP</div>
+      </ons-toolbar>
+      <p>
+        <b>CISSP summary</b><br />
+        <b>Version 2.0</b><br />
+        Original authors:<br />
+        Maarten de Frankrijker, CISSP.<br />
+        Revised by Christian Reina, CISSP.<br />
+        Revised by Steve Warnock<br />
+        Fixes and improvments welcomed @<br/><a href="#" onclick="window.open('https://github.com/g-bl/Sunflower', '_system'); return false;">g-bl/Sunflower</a><br />
+        Illustration: Philadelphia Museum of Art
+      </p>
+    </ons-page>
+  </template>
+
+  <template id="domain1.html">
+    <ons-navigator id="domain1-navigator">
+      <ons-page id="domain1" class="domain1">
+        <ons-toolbar>
+          <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+              <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center domain-title">
+            Domain 1 - Security and Risk Management
+          </div>
+        </ons-toolbar>
+        <ons-list>
+          <ons-list-item id="push-button-1-1">Concepts (10)</ons-list-item>
+          <ons-list-item id="push-button-1-2">Risk (12)</ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-navigator>
+  </template>
+
+  <template id="domain1-1.html">
+    <ons-page id="domain1-1" class="domain1">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Concepts (10)</div>
+      </ons-toolbar>
+
+      <p><b>CIA</b><br />
+        <b>DAD -</b> NEGATIVE - (disclosure alteration and destruction)<br />
+        <b>Confidentiality -</b> prevent unauthorized disclosure, need to know,
+        and least privilege. assurance that information is not disclosed to
+        unauthorized programs, users, processes, encryption, logical and
+        physical access control,<br />
+        <b>Integrity -</b> no unauthorized modifications, consistent data,
+        protecting data or a resource from being altered in an unauthorized
+        fashion<br />
+        <b>Availability -</b> reliable and timely, accessible, fault tolerance and
+        recovery procedures, WHEN NEEDED<br />
+        <b>IAAA –</b> requirements for accountability<br />
+        <b>Identification -</b> user claims identity, used for user access control<br />
+        <b>Authentication -</b> testing of evidence of users identity<br />
+        <b>Accountability -</b> determine actions to an individual person<br />
+        <b>Authorization -</b> rights and permissions granted<br />
+        <b>Privacy -</b> level of confidentiality and privacy protections
+      </p>
+    </ons-page>
+  </template>
+
+  <template id="domain1-2.html">
+    <ons-page id="domain1-2" class="domain1">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Risk (12)</div>
+      </ons-toolbar>
+
+      <p>Not possible to get rid of all risk.<br />
+        Get risk to acceptable/tolerable level<br />
+        Baselines – minimum standards<br />
+        ISO 27005 – risk management framework<br />
+        Budget – if not constrained go for the $$$
+      </p>
+    </ons-page>
+  </template>
+
+  <template id="domain2.html">
+    <ons-navigator id="domain2-navigator">
+      <ons-page id="domain2" class="domain2">
+        <ons-toolbar>
+          <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+              <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center domain-title">
+            Domain 2 - Asset Security
+          </div>
+        </ons-toolbar>
+        <ons-list>
+          <ons-list-item id="push-button-2-1">Information classification (110)</ons-list-item>
+          <ons-list-item id="push-button-2-2">Security policies, standards & guidelines (119)</ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-navigator>
+  </template>
+
+  <template id="domain2-1.html">
+    <ons-page id="domain2-1" class="domain2">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Information classification (110)</div>
+      </ons-toolbar>
+
+      <p><b>Categorization –</b> <u>Process of determining the impact of loss of CIA
+          of information to an organization.</u> Identifies the value of the data to
+        the organization. Not all data has same value, demonstrates
+        business commitment to security, Identify which information is
+        most sensitive and vital<br />
+        <b>Criteria -</b> Value, age, useful life, personal association<br />
+        <b>Levels</b><br />
+        <u>Government, military</u>
+        <ul>
+          <li>Unclassified (have FOUO also)</li>
+          <li>Sensitive but unclassified</li>
+          <li>Confidential (some damage)</li>
+          <li>Secret (Serious damage) (Can have Country specific
+            restrictions also – NZAUS SECRET for New Zealand,
+            Australia and US secret)</li>
+          <li>Top Secret (Grave damage)</li>
+        </ul>
+      </p>
+      <p>
+        <u>Private sector</u> (113)
+        <ul>
+          <li>Public; used by public or employees</li>
+          <li>Company Confidential; viewed by all employees but
+            not for general use</li>
+          <li>Company Restricted – restricted to a subset of
+            employees</li>
+          <li>Private; Ex. SSN, credit card info., could cause
+            damage</li>
+          <li>Confidential; cause exceptionally grave damage,
+            Proprietary; trade secrets</li>
+          <li>Sensitive; internal business</li>
+        </ul>
+      </p>
+      <p>
+        TS = Confidential/Prop, Secret = Private, Confidential = sensitive
+      </p>
+    </ons-page>
+  </template>
+
+  <template id="domain2-2.html">
+    <ons-page id="domain2-2" class="domain2">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Security policies, standards & guidelines (119)</div>
+      </ons-toolbar>
+
+      <p></p>
+    </ons-page>
+  </template>
+
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>
