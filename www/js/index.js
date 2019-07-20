@@ -4,7 +4,7 @@ var domainsSubsections = [
     0,
     0,
     0,
-    0,
+    14,
     0,
     0
 ];
@@ -18,11 +18,11 @@ document.addEventListener('init', function (event) {
             { timeout: 2000, animation: 'fall' });
     };
 
-    var idParts = page.id.split("-");
+    let idParts = page.id.split("-");
 
     if (idParts.length === 1) {
 
-        var domainNb = idParts[0].replace("domain", "");
+        let domainNb = idParts[0].replace("domain", "");
 
         for (let i = 1; i < domainsSubsections[domainNb - 1] + 1; i++)
         {
@@ -30,6 +30,15 @@ document.addEventListener('init', function (event) {
                 document.querySelector('#domain' + domainNb + '-navigator').pushPage('domain' + domainNb + '-' + i + '.html', { });
             };
         }
+    }
+    else if (idParts.length === 2) {
+
+        let domainNb = idParts[0].replace("domain", "");
+        let sectionNb = idParts[1];
+
+        page.querySelector('.next').onclick = function () {
+            document.querySelector('#domain' + domainNb + '-navigator').pushPage('domain' + domainNb + '-' + (parseInt(sectionNb) + 1) + '.html', { });
+        };
     }
 });
 

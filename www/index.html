@@ -70,6 +70,10 @@
     </ons-page>
   </template>
 
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////
+       Domain 1 - Security and Risk Management
+       ////////////////////////////////////////////////////////////////////////////////////////// -->
+
   <template id="domain1.html">
     <ons-navigator id="domain1-navigator">
       <ons-page id="domain1" class="domain1">
@@ -138,6 +142,10 @@
       </p>
     </ons-page>
   </template>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////
+       Domain 2 - Asset Security
+       ////////////////////////////////////////////////////////////////////////////////////////// -->
 
   <template id="domain2.html">
     <ons-navigator id="domain2-navigator">
@@ -218,6 +226,642 @@
       </ons-toolbar>
 
       <p></p>
+    </ons-page>
+  </template>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////
+       Domain 6 - Security Assessment and Testing
+       ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <template id="domain6.html">
+    <ons-navigator id="domain6-navigator">
+      <ons-page id="domain6" class="domain6">
+        <ons-toolbar>
+          <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+              <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center domain-title">
+            Domain 6 - Security Assessment and Testing
+          </div>
+        </ons-toolbar>
+        <br /><br />
+        <ons-list>
+          <ons-list-item id="push-button-6-1">Security Testing (522)</ons-list-item>
+          <ons-list-item id="push-button-6-2">Verification & Validation (523)</ons-list-item>
+          <ons-list-item id="push-button-6-3">Logs (530)</ons-list-item>
+          <ons-list-item id="push-button-6-4">Security Software (534)</ons-list-item>
+          <ons-list-item id="push-button-6-5">Monitoring and auditing (537)</ons-list-item>
+          <ons-list-item id="push-button-6-6">Protecting Logs (538)</ons-list-item>
+          <ons-list-item id="push-button-6-7">Synthetic Transactions (540)</ons-list-item>
+          <ons-list-item id="push-button-6-8">Code Review and Testing (542)</ons-list-item>
+          <ons-list-item id="push-button-6-9">Threat Assessment Modeling (544)?</ons-list-item>
+          <ons-list-item id="push-button-6-10">Key Performance and Risk Indicators (562)</ons-list-item>
+          <ons-list-item id="push-button-6-11">Performing Vulnerability Assessments</ons-list-item>
+          <ons-list-item id="push-button-6-12">Testing Software (549)</ons-list-item>
+          <ons-list-item id="push-button-6-13">Levels of Development Testing (550)</ons-list-item>
+          <ons-list-item id="push-button-6-14">Things to Know</ons-list-item>
+        </ons-list>
+        <br /><br />
+      </ons-page>
+    </ons-navigator>
+  </template>
+
+  <template id="domain6-1.html">
+    <ons-page id="domain6-1" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Security Testing (522)</div>
+      </ons-toolbar>
+
+      <p>Security Testing - verifies that a control is functioning properly.
+        These tests include automated scans, tool-assisted penetration
+        tests and manual attempts to undermine security. When scheduling
+        security controls for review, information security managers should
+        consider the following factors:
+        <ul>
+          <li>Availability of security testing resources</li>
+          <li>
+            Criticality of the systems and applications protected by
+            the tested controls Sensitivity of information contained on
+            tested systems and applications
+          </li>
+          <li>
+            Likelihood of a technical failure of the mechanism
+            implementing the control
+          </li>
+          <li>
+            Likelihood of a misconfiguration of the control that would
+            jeopardize security
+          </li>
+          <li>Risk that the system will come under attack</li>
+          <li>Rate of change of the control configuration</li>
+          <li>
+            Other changes in the technical environment that may
+            affect the control performance
+          </li>
+          <li>Difficulty and time required to perform a control test</li>
+          <li>Impact of the test on normal business operations</li>
+        </ul>
+      </p>
+      <p>
+        After assessing each of these factors, security teams design and
+        validate a comprehensive assessment and testing strategy.</p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-2.html">
+    <ons-page id="domain6-2" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Verification & Validation (523)</div>
+      </ons-toolbar>
+
+      <p><b>Verification –</b> objective evidence that the design outputs of a
+        phase of the SDLC meet requirements. 3rd party sometimes<br />
+        <b>Validation –</b> develop “level of confidence” that the software meets
+        all requirements and expectations, software improve over time
+        Find back doors thru structured walk through</p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-3.html">
+    <ons-page id="domain6-3" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Logs (530)</div>
+      </ons-toolbar>
+
+      <p><b>Network Flow –</b> captured to provide insight into network traffic for
+        security, troubleshooting, and performance management<br />
+        <b>Audit logging –</b> provides information about events on the routers<br />
+        <b>NTP -</b> Network Time Protocol, One important consideration is
+        ensuring that logs have accurate time stamps and that these time
+        stamps remain consistent throughout the environment. A common
+        method is to set up an internal NTP server that is synchronized to a
+        trusted time source such as a public NTP server. Other systems can
+        then synchronize with this internal NTP server.<br />
+        <b>Syslog –</b> message logging standard commonly used by network
+        devices, Linux and Unix systems and other devices (firewalls)<br />
+        Reboot – generates an information log entry
+        <ul>
+          <li>Errors – significant problem</li>
+          <li>Warnings – future problem</li>
+          <li>Information – successful operations</li>
+          <li>Success Audits – successful security accesses</li>
+          <li>Failure Audits – failed security access attempts</li>
+        </ul>
+      </p>
+      <p>
+        <b>Inconsistent Time Stamps –</b> often caused by improperly set time
+        zones or due to differences in how system clocks are set<br />
+        <b>Modified logs –</b> often a sign of intrusion or malicious intent
+        NetFlow is a feature that was introduced on Cisco routers that
+        provides the ability to collect IP network traffic as it enters or exits
+        an interface. a network administrator can determine things such as
+        the source and destination of traffic, class of service, and the
+        causes of congestion. </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-4.html">
+    <ons-page id="domain6-4" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Security Software (534)</div>
+      </ons-toolbar>
+
+      <p>Antimalware and Antivirus – records instances of detected
+        malware,<br />
+        <b>IDS/IPS</b> = security testing, NIST 800-4<br />
+        <b>War driving -</b> driving a car with notebook to find open access points<br />
+        <b>IDS intrusion detection system</b><br /><br />
+        NETWORK BASED
+        <ul>
+          <li>Detects intrusions on the LAN behind a firewall.</li>
+          <li>Is passive while it acquires data.</li>
+          <li>Reviews packets and headers</li>
+          <li>
+            Problem with network based is that it will not detect attacks
+            by users logged into hosts
+          </li>
+        </ul>
+      </p>
+      <p>
+        HOST BASED
+        <ul>
+          <li>
+            monitoring servers through EVENT LOGS AND SYSTEM
+            LOGS
+          </li>
+          <li>
+            as good as the completeness of the host logging
+          </li>
+          <li>
+            easier to discover and disable
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b>Signature based method (AKA Knowledge based)</b> - compared
+        with signature attack database (aka misuse detector)<br />
+        <b>Statistical anomaly based - </b>defines a ‘normal’ behavior and
+        detects abnormal behaviors.<br />
+        <b>Response box -</b> is a part of an IDS that initiates alarm or activity
+        Components: Information source/sensor, centralized monitor
+        software, data and even report analysis, database components and
+        response to an event or intrusion<br />
+        <b>IPS Intrusion prevention system -</b> detect attack and PREVENT that
+        attack being successful<br />
+        <b>Remote Access Software –</b> granted and secured through VPNs<br />
+        <b>Web Proxies –</b> intermediate hosts, restrict access<br />
+        <b>Vulnerability Management Software –</b> patching<br />
+        <b>Authentication Servers –</b> SSO servers<br />
+        <b>Routers –</b> permit or block traffic based on policy<br />
+        <b>Firewalls –</b> more sophisticated than routers to examine traffic</p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-5.html">
+    <ons-page id="domain6-5" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Monitoring and auditing (537)</div>
+      </ons-toolbar>
+
+      <p>Companies can set predefined thresholds for the number of certain
+        types of errors that will be allowed before the activity is considered
+        suspicious. This baseline is referred to as <u>clipping level</u><br /><br />
+        <u>Audit trails</u><br />
+        <ul>
+          <li>Transaction date/time</li>
+          <li>Who processed the transaction</li>
+          <li>At which terminal</li>
+        </ul>
+      </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-6.html">
+    <ons-page id="domain6-6" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Protecting Logs (538)</div>
+      </ons-toolbar>
+
+      <p>
+        <b>Breaches –</b> protect from breaches of confidentiality and integrity.<br />
+        <b>Availability –</b> archival process to prevent loss by overwritten logs<br />
+        <b>Log Analysis –</b> study logs for events of interest<br />
+        Set maximum size. If too small, attacker can make little changes and
+        push them out of window
+      </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-7.html">
+    <ons-page id="domain6-7" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Synthetic Transactions (540)</div>
+      </ons-toolbar>
+
+      <p><b>Real User Monitoring –</b> aims to capture and analyze every
+        transaction of a user<br />
+        <b>Synthetic Performance Monitoring –</b> uses scripted or recorded
+        data. Traffic capture, Db performance monitoring, website
+        performance monitoring can be used. NOT User Session Monitoring
+        Types<br />
+        <ul>
+          <li>Proactive monitoring involves having external agents run scripted transactions against a web application
+          </li>
+          <li>Db monitoring; availability of Db</li>
+          <li>TCP port monitoring; availability of website, service, or application</li>
+        </ul>
+      </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-8.html">
+    <ons-page id="domain6-8" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Code Review and Testing (542)</div>
+      </ons-toolbar>
+
+      <p>Code review is the foundation of software assessment programs.
+        During a code review, also known as a “peer review,” developers
+        other than the one who wrote the code review it for defects.<br />
+        The most formal code review processes, known as Fagan
+        inspections, follow a rigorous review and testing process with six
+        steps:
+        <ul>
+          <li>Planning</li>
+          <li>Overview</li>
+          <li>Preparation</li>
+          <li>Inspection</li>
+          <li>Rework</li>
+          <li>Follow-up</li>
+        </ul>
+      </p>
+      <p>
+        <b>Code Coverage Report –</b> information on the functions,
+        statements, branches, and conditions covered in testing.<br />
+        Use cases – used as part of test coverage calculation that divides
+        the tested use case by total use cases<br />
+        <b>Code Review Report –</b> generated if the organization was
+        manually reviewing the application’s source code
+        <ul>
+          <li>
+            <b>Black-box testing</b> observes the system external
+            behavior, no internal details known
+          </li>
+          <li>
+            <b>Dynamic Testing –</b> does not require access to source
+            code, evaluates code in a runtime environment
+          </li>
+          <li>
+            <b>White-box testing</b> (crystal) is a detailed exam of a
+            logical path, checking the possible conditions. Requires
+            access to source code
+          </li>
+          <li>
+            <b>Static Testing –</b> requires access to source code,
+            performs code analysis
+          </li>
+          <li><b>CSV</b> – Comma Separated Values</li>
+          <li>
+            <b>CVE -</b> Common Vulnerability and Exposures dictionary.
+            The CVE dictionary provides a standard convention
+            used to identify vulnerabilities, list by MITRE
+          </li>
+          <li>
+            <b>CVSS –</b> Common Vulnerability Scoring System, metrics
+            and calculation tools for exploitability, impact, how
+            mature exploit code is, and how vulnerabilities can be
+            remediated, also to score vulnerabilities against unique
+            requirements.
+          </li>
+          <li><b>NVD –</b> National Vulnerability Db</li>
+          <li>
+            <b>Compiled code</b> poses more risk than interpreted code
+            because malicious code can be embedded in the
+            compiled code and can be difficult to detect.
+          </li>
+          <li>
+            <b>Regression testing</b> is the verification that what is being
+            installed does not affect any portion of the application
+            system already installed. It generally requires the
+            support of automated process to repeat tests previously
+            undertaken. Known inputs against an application then
+            compares results to earlier version results
+          </li>
+          <li><b>nonRegression testing –</b> code works as planned</li>
+          <li>
+            <b>Code comparison</b> is normally used to identify the parts
+            of the source code that have changed.
+          </li>
+          <li>
+            <b>Integration testing</b> is aimed at finding bugs in the
+            relationship and interfaces between pairs of
+            components. It does not normally test all functions.
+          </li>
+          <li><b>Attack surface -</b> exposure</li>
+        </ul>
+      </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-9.html">
+    <ons-page id="domain6-9" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Threat Assessment Modeling (544)?</div>
+      </ons-toolbar>
+
+      <p><b>STRIDE -</b> is often used in relation to assessing threats against
+        applications or operating systems, threat categorization scheme,
+        spoofing, tampering, repudiation, information disclosure, denial of
+        service, and elevation of privilege.<br />
+        <b>Spoofing -</b> An attack with the goal of gaining access to a target
+        system through the use of a falsified identity. Spoofing can be used
+        against IP addresses, MAC address, usernames, system names,
+        wireless network SSIDs, and other types of logical identification.<br />
+        <b>Tampering -</b> Any action resulting in the unauthorized changes or
+        manipulation of data, whether in transit or in storage. Tampering is
+        used to falsify communications or alter static information. Such
+        attacks are a violation of integrity as well as availability.<br />
+        <b>Repudiation -</b>The ability for a user or attacker to deny having
+        performed an action or activity.<br />
+        <b>Information disclosure -</b> The revelation or distribution of private,
+        confidential, or controlled information to external or unauthorized
+        entities.<br />
+        <b>Elevation of privilege -</b> An attack where a limited user account is
+        transformed into an account with greater privileges/powers/ access</p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-10.html">
+    <ons-page id="domain6-10" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Key Performance and Risk Indicators (562)</div>
+      </ons-toolbar>
+
+      <p>Security managers should also monitor key performance and risk
+        indicators on an ongoing basis. The exact metrics they monitor will
+        vary by organization but may include the following:<br />
+        <ul>
+          <li>Number of open vulnerabilities</li>
+          <li>Time to resolve vulnerabilities</li>
+          <li>Number of compromised accounts</li>
+          <li>Number of software flaws detected in preproduction scanning & Repeat audit findings</li>
+          <li>User attempts to visit known malicious sites</li>
+        </ul>
+      </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-11.html">
+    <ons-page id="domain6-11" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Performing Vulnerability Assessments</div>
+      </ons-toolbar>
+
+      <p><b>Vulnerability scans -</b> automatically probe systems, applications,
+        and networks, looking for weaknesses that may be exploited<br />
+        <b>Network discovery scanning -</b> uses a variety of techniques to scan
+        a range of IP addresses, searching for systems with open ports.<br />
+        <b>TCP SYN Scanning -</b> Sends a single packet to each scanned port
+        with the SYN flag set. This indicates a request to open a new
+        connection. If the scanner receives a response that has the SYN and
+        ACK flags set, this indicates that the system is moving to the second
+        phase in the three-way TCP handshake and that the port is open.
+        TCP SYN scanning is also known as “half-open” scanning.<br />
+        <b>TCP Connect Scanning -</b> Opens a full connection to the remote
+        system on the specified port. This scan type is used when the user
+        running the scan does not have the necessary permissions to run a
+        half-open scan.<br />
+        <b>TCP ACK Scanning -</b> Sends a packet with the ACK flag set,
+        indicating that it is part of an open connection.<br />
+        <b>Xmas Scanning -</b> Sends a packet with the FIN, PSH, and URG flags
+        set. A packet with so many flags set is said to be “lit up like a
+        Christmas tree,” leading to the scan’s name.<br />
+        <b>Passive Scanning –</b> user scan wireless to look for rogue devices in
+        addition to IDS<br />
+        <b>Bluetooth Scans –</b> time consuming, many personal devices
+        <ul>
+          <li>Active; strength of PIN, security mode</li>
+          <li>Passive; only active connections, multiple visits</li>
+        </ul>
+      </p>
+      <p>
+        <b> Authenticated scans –</b> read-only account to access config files</p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-12.html">
+    <ons-page id="domain6-12" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Testing Software (549)</div>
+      </ons-toolbar>
+
+      <p><b>Static Testing -</b> evaluates the security of software without running it
+        by analyzing either the source code or the compiled application.
+        Static analysis usually involves the use of automated tools designed
+        to detect common software flaws, such as buffer overflows.<br />
+        <b>Dynamic Testing -</b> evaluates the security of software in a runtime
+        environment and is often the only option for organizations deploying
+        applications written by someone else. In those cases, testers often do
+        not have access to the underlying source code. One common
+        example of dynamic software testing is the use of web application
+        scanning tools to detect the presence of cross-site scripting, SQL
+        injection, or other flaws in web applications. Testing may include the
+        use of synthetic transactions to verify system performance.<br />
+        <b>Fuzz Testing -</b> is a specialized dynamic testing technique that
+        provides many different types of input to software to stress its limits
+        and find previously undetected flaws. Fuzz testing software supplies
+        invalid input to the software, either randomly generated or specially
+        crafted to trigger known software vulnerabilities. Often limited to
+        simple errors, does find important, exploitable issues, don’t fully cover
+        code<br />
+        <b>Mutation (Dumb) Fuzzing -</b> Takes previous input values from actual
+        operation of the software and manipulates (or mutates) it to create
+        fuzzed input. It might alter the characters of the content, append
+        strings to the end of the content, or perform other data manipulation
+        techniques.<br />
+        <b>Generational (Intelligent) Fuzzing -</b> develops inputs based on
+        models of expected inputs to perform the same task. The zzuf tool
+        automates the process of mutation fuzzing by manipulating input
+        according to user specifications.<br />
+        <b>Misuse Case testing -</b> Software testers use this process or abuse
+        case testing to evaluate the vulnerability of their software to known
+        risks.<br />
+        <b>Misuse Case diagrams –</b> threats and mitigate<br />
+        <b>Test Coverage Analysis -</b> method used to assess how well software
+        testing covered the potential use of an application<br />
+        Interface testing - is an important part of the development of complex
+        software systems. In many cases, multiple teams of developers work
+        on different parts of a complex application that must function together
+        to meet business objectives. The handoffs between these separately
+        developed modules use well-defined interfaces so that the teams may
+        work independently. Interface testing assesses the performance of
+        modules against the interface specifications to ensure that they will
+        work together properly when all of the development efforts are
+        complete.<br />
+        <ul>
+          <li>
+            <b>Application Programming Interfaces (APIs) -</b> Offer a
+            standardized way for code modules to interact and may be
+            exposed to the outside world through web services.
+            Developers must test APIs to ensure that they enforce all
+            security requirements.
+          </li>
+          <li>
+            <b>User Interfaces (UIs) -</b> Examples include graphic user
+            interfaces (GUIs) and command-line interfaces. UIs provide
+            end users with the ability to interact with the software.
+            Interface tests should include reviews of all user interfaces
+            to verify that they function properly.
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b>Physical Interfaces -</b> Exist in some applications that manipulate
+        machinery, logic controllers, or other objects in the physical world.
+        Software testers should pay careful attention to physical interfaces
+        because of the potential consequences if they fail.
+      </p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-13.html">
+    <ons-page id="domain6-13" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Levels of Development Testing (550)</div>
+      </ons-toolbar>
+
+      <p><b>Unit testing -</b> testing small piece of software during a development
+        stage by developers and quality assurance, ensures quality units
+        are furnished for integration into final product<br />
+        <b>Integration level testing –</b> focus on transfer of data and control
+        across a programs interfaces<br />
+        <b>Integration level testing –</b> focus on transfer of data and control
+        across a programs interfaces<br />
+        <b>System level testing –</b> demonstrates that all specified functionality
+        exists and that the software product is trustworthy</p>
+      <span class="next">Next &raquo;</span>
+    </ons-page>
+  </template>
+
+  <template id="domain6-14.html">
+    <ons-page id="domain6-14" class="domain6">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button></ons-back-button>
+        </div>
+        <div class="center domain-title">Things to Know</div>
+      </ons-toolbar>
+
+      <p><b>SAS 70 –</b> outdated 2011, based on ISAE 3402<br />
+        <b>SOC Reports -</b> service organization control report. (569)
+        <ul>
+          <li>
+            SOC-1 report, covers only internal controls over financial
+            reporting. SSAE 16 is the same most common synonym<br />
+            SOC 1 - Finances
+          </li>
+          <li>
+            SOC-2 (design and operational effectiveness) If you want to
+            verify the security, integrity, privacy, and availability controls,
+            in detail for business partners, auditors @security
+          </li>
+          <li>
+            SOC-3 report; shared with broad community, website seal,
+            support organizations claims about their ability to provide CIA<br />
+            Type 1 – point in time covering design<br />
+            Type 2 – period of time covering design and operating
+            effectiveness
+          </li>
+        </ul>
+      </p>
+      <p>
+        Passive monitoring only works after issues have occurred because
+        it requires actual traffic<br />
+        <b>Log Management System –</b> volume of log data, network
+        bandwidth, security of data, and amount of effort to analyze. NOT
+        enough log sources<br />
+        <b>OPSEC process -</b> Understanding your day-to-day operations from
+        the viewpoint of a competitor, enemy, or hacker and then
+        developing and applying countermeasures.<br />
+        <b>Pen-test –</b> testing of network security as would a hacker do to find
+        vulnerabilities. Always get management approval first<br />
+        <b>Port scanner -</b> program that attempts to determine whether any of
+        a range of ports is open on a particular computer or device
+        <b>Ring zero -</b> inner code of the operating system. Reserved for
+        privileged instructions by the OS itself<br />
+        <b>War dialer -</b> dials a range of phone numbers as in the movie
+        wargames<br />
+        <b>Superzapping -</b> system utility or application that bypasses all
+        access controls and audit/logging functions to make updates to
+        code or data<br />
+        <b>Operational assurance –</b> Verification that a system is operating
+        according to its security requirements
+        <ul>
+          <li>Design & development reviews</li>
+          <li>Formal modeling</li>
+          <li>Security architecture</li>
+          <li>ISO 9000 quality techniques</li>
+          <li>Assurance – degree of confidence that the implemented security measures work as intended</li>
+        </ul>
+      </p>
+      <p>
+        <b>Piggybacking -</b> when an unauthorized person goes through a door
+        behind an authorized person.<br />
+        <b>Tailgating –</b> authorized person circumventing controls<br />
+        <b>Supervisor mode -</b> processes running in inner protected ring</p>
     </ons-page>
   </template>
 
